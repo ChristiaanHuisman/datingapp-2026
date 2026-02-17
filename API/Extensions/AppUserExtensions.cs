@@ -1,5 +1,5 @@
 using API.DTOs;
-using API.Enteties;
+using API.Entities;
 using API.Interfaces;
 
 namespace API.Extensions;
