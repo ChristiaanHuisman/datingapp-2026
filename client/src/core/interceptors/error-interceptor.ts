@@ -1,6 +1,6 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 import { inject } from '@angular/core';
-import { catchError, pipe } from 'rxjs';
+import { catchError } from 'rxjs';
 import { ToastService } from '../services/toast-service';
 import { NavigationExtras, Router } from '@angular/router';
 
