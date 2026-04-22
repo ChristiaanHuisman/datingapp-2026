@@ -8,6 +8,6 @@ public interface IMemberRepository
     void Update(Member member);
     Task<PaginatedResults<Member>> GetMembersAsync(MemberParams memberParams);
     Task<Member?> GetMemberByIdAsync(string id);
-    Task<IReadOnlyList<Photo>> GetPhotosForMembersAsync(string memberId);
+    Task<IEnumerable<Photo>> GetPhotosForMembersAsync(string memberId, bool isCurrentMember);
     Task<Member?> GetMemberForUpdate(string id);
 }
